@@ -1,0 +1,18 @@
+body {
+  background-image: url("image1.jpg");
+  background-color: #cccccc;
+}
+
+.container{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: [label] auto [input] 1fr;
+}
+input {
+  grid-column: input;
+  align-self: center;
+}
+label {
+  grid-column: label;
+  align-self: center;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html >
+<head>
+<link rel = "stylesheet" type = "text/css" href = "static/myfile.css">
+  <title>Revenue </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+    <body >
+        <center><h2><font color = "#9933ff">Revenue Projection</font></h2></center><br>
+            <form action="/predict" method="POST">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-2">
+                                 <label><font color = "#9933ff">IP Total:</font></label>
+                                <input type="number" name="IP_TOTAL" placeholder="Enter IP Total" required>
+                            </div>
+                            <div class = "col-2">
+                                <label><font color = "#9933ff">OP Total:</font></label>
+                                <input type="number" name="OP_TOTAL" placeholder="Enter OP Total" required>
+                            </div>
+                            <div class = "col-2">
+                                <label><font color = "#9933ff">Pharmacy Revenue:</font></label>
+                                <input type="number" name="TOTAL_PHARMACY_REVENUE" placeholder="Enter Total Pharmacy Revenue"required>
+                            </div>
+                            <div class = "col-2">
+                                <label><font color = "#9933ff">IP Lab Revenue:</font></label>
+                                <input type="number" name="IP_Lab_Revenue" placeholder="Enter IP Lab Rev"required>
+                            </div>
+                            <div class = "col-2">
+                                <label><font color = "#9933ff">OP Lab Revenue:</font></label>
+                                <input type="number" name="OP_Lab_Revenue" placeholder="Enter OP Lab Revenue"required>
+                            </div>
+                        </div>
+                       <br> <center><input class = "btn btn-primary" type = "submit" value = "predict"></center>
+                    </div>
+            </form>    
+            
+    </body>
+</html>
